@@ -97,10 +97,3 @@ cd portfolio
 
 ---
 
-Agar aap chaho to main:
-✅ Is README me **screenshots section** bhi add kar du  
-✅ **GitHub profile README** bhi bana du  
-✅ **Projects ke individual README** bhi likh du  
-
-Bas batao:  
-👉 **Kya main isme screenshots section bhi add kar doon?** 📸
