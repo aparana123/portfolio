@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aparana | Programming Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #050d2d, #0a1d6b);
+      color: white;
+      font-family: system-ui, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 0;
+      background-color: #070224;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #8facff;
+    }
+
+    .left {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 80px 5%;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .leftsection {
+      font-size: 2.4rem;
+      max-width: 500px;
+    }
+
+    .purple,
+    #element {
+      color: #903ae1;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #773b9f;
+      color: white;
+      padding: 11px 22px;
+      border: 2px solid white;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #903ae1;
+      transform: translateY(-3px);
+    }
+
+    .rightsection img {
+      width: 380px;
+      max-width: 100%;
+      filter: drop-shadow(0 0 10px #903ae1);
+    }
+
+    /* SECTIONS */
+    .secondsection,
+    .skillsection,
+    .projectsection,
+    .contactsection {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .about-text {
+      text-align: center;
+      color: #ddd;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    /* SKILLS */
+    .role-title {
+      margin: 20px 0;
+      color: #903ae1;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .skills-box,
+    .project-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .skill-card,
+    .project-card {
+      background: linear-gradient(145deg, #241678, #2f1c8f);
+      padding: 18px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(115, 207, 238, 0.6);
+      font-weight: 500;
+      transition: all 0.35s ease;
+      cursor: pointer;
+    }
+
+    .skill-card:hover,
+    .project-card:hover {
+      background: linear-gradient(145deg, #7b3fe4, #5120b3);
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 12px 25px rgba(144, 58, 225, 0.9);
+      color: #fff;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #271264;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .footer-rights {
+      margin-top: 15px;
+      color: gray;
+      font-size: 0.95rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .leftsection {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">Aparana's Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="firstsection" id="home">
+    <div class="leftsection">
+      <p>Hi, My name is <span class="purple">Aparana Varshney</span></p>
+      <p>I am a <span id="element"></span></p>
+
+      <div class="buttons">
+        <a href="resume.pdf" class="btn" download>Download Resume</a>
+        <a href="https://github.com/aparana123" class="btn" target="_blank">Visit GitHub</a>
+      </div>
+    </div>
+
+    <div class="rightsection">
+      <img src="code2-removebg-preview.png" alt="Developer Image">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="secondsection" id="about">
+    <h1>About Me</h1>
+    <p class="about-text">
+      I am a passionate Programming Engineer and Full Stack Learner.
+      I enjoy working with modern web technologies, backend programming,
+      and building real-world applications.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skillsection" id="skills">
+    <h1>My Skills</h1>
+    <div class="role-title">Job Role: Programming Engineer</div>
+
+    <div class="skills-box">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">C</div>
+      <div class="skill-card">C++</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Artificial Intelligence (AI)</div>
+      <div class="skill-card">Advanced Java</div>
+      <div class="skill-card">Database (MySQL)</div>
+      <div class="skill-card">REST API</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projectsection" id="projects">
+    <h1>Projects</h1>
+
+    <div class="project-box">
+      <div class="project-card">ATM Management System (Java)</div>
+      <div class="project-card">Student Report Card System</div>
+      <div class="project-card">Tic Tac Toe Game</div>
+      <div class="project-card">Personal Portfolio Website</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contactsection" id="contact">
+    <h1>Contact Me</h1>
+    <p class="about-text">Email: aparana@gmail.com</p>
+    <p class="about-text">GitHub: github.com/aparana123</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-rights">
+      © 2025 Aparana Varshney | All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- TYPED JS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Programming Engineer", "Web Developer", "Full Stack Learner"],
+      typeSpeed: 55,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+
+</body>
+</html>
