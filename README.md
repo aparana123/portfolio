@@ -1,4 +1,4 @@
-# portfoli
+# portfolio
 # 🌐 Aparana Varshney | Personal Portfolio Website  
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
